@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="weather-icon.png">
+</head>
+<body>
+
+    <header>
+        <h1>Weather Dashboard</h1>
+        <p>Your go-to weather app for real-time updates</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name" />
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <h2 id="city-name"></h2>
+            <p id="weather-description"></p>
+            <div class="weather-details">
+                <p>Temperature: <span id="temperature"></span> °C</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
+            </div>
+            <img id="weather-icon" src="" alt="Weather Icon">
+        </div>
+        
+        <p id="error-message"></p>
+    </main>
+
+    <footer>
+        <p>Powered by OpenWeather API | Developed by You</p>
+    </footer>
+
+</body>
+      </html>
